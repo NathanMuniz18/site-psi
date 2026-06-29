@@ -59,12 +59,22 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-olive: var(--olive);
+  --color-cream: var(--cream);
+  --color-brown: var(--brown);
+  --color-gold: var(--gold);
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Urbanist", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --olive: #7A6A2A;
+  --cream: #F5ECD7;
+  --brown: #2E1A0E;
+  --gold: #C9AE5D;
+  --background: #FAF7F2;
+  --foreground: #2E1A0E;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
