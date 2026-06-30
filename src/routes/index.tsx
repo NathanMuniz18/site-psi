@@ -412,21 +412,12 @@ function Sobre() {
         <div className="ks-reveal">
           <div
             className="relative aspect-[4/5] w-full rounded-3xl border overflow-hidden"
-            style={{
-              backgroundColor: "var(--cream)",
-              borderColor: "rgba(201,174,93,0.4)",
-            }}
+            style={{ borderColor: "rgba(201,174,93,0.4)" }}
           >
             <img
-              src={keilyPhoto.url}
-              alt="Keily Silva, Psicóloga e Psicanalista"
-              className="absolute inset-0 w-full h-full object-cover"
-              loading="lazy"
-            />
-            <span
-              aria-hidden
-              className="absolute bottom-6 left-6 right-6 h-px"
-              style={{ backgroundColor: "rgba(201,174,93,0.4)" }}
+              src="/keily.jpg"
+              alt="Keily Silva - Psicóloga e Psicanalista"
+              className="w-full h-full object-cover object-top"
             />
           </div>
         </div>
