@@ -7,8 +7,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import keilyPhoto from "@/assets/keily.jpg.asset.json";
 
-const WHATSAPP_URL = "https://wa.me/5511999999999";
+const WHATSAPP_URL = "https://wa.me/5511942713592";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +41,7 @@ export const Route = createFileRoute("/")({
           description:
             "Psicóloga e Psicanalista especializada no atendimento de mulheres e relacionamentos. Atendimento 100% online.",
           url: "/",
-          telephone: "+55-11-99999-9999",
+          telephone: "+55-11-94271-3592",
           areaServed: "Brasil",
           availableLanguage: "Portuguese",
           priceRange: "$$",
@@ -343,17 +344,14 @@ function ComoFunciona() {
 
 const TESTIMONIALS = [
   {
-    name: "Ana M.",
     quote:
       "Nunca imaginei que falar pudesse mudar tanto minha forma de me ver. A análise me ajudou a entender padrões que eu repetia sem perceber — nos relacionamentos e em mim mesma.",
   },
   {
-    name: "Juliana R.",
     quote:
       "É um espaço diferente de tudo que já conheci. Não há respostas prontas, mas há uma escuta que transforma. Comecei a me entender de um jeito que não esperava.",
   },
   {
-    name: "Carla S.",
     quote:
       "O processo é lento, mas os efeitos são reais e duradouros. Aprendi a me escutar de verdade — e isso mudou minha relação comigo e com as pessoas que amo.",
   },
@@ -373,9 +371,9 @@ function Depoimentos() {
         </div>
 
         <div className="mt-14 md:mt-16 grid gap-6 md:gap-8 md:grid-cols-3">
-          {TESTIMONIALS.map((t) => (
+          {TESTIMONIALS.map((t, i) => (
             <figure
-              key={t.name}
+              key={i}
               className="ks-reveal relative rounded-2xl border bg-[color:var(--bg,white)] p-8 md:p-10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-30px_rgba(46,26,14,0.35)]"
               style={{
                 borderColor: "rgba(201,174,93,0.2)",
@@ -395,9 +393,6 @@ function Depoimentos() {
               <blockquote className="pt-10 italic text-[16px] leading-[1.75] text-[color:var(--brown)]/85">
                 {t.quote}
               </blockquote>
-              <figcaption className="mt-6 text-[13px] tracking-[0.12em] uppercase font-semibold text-[color:var(--brown)]">
-                {t.name}
-              </figcaption>
             </figure>
           ))}
         </div>
@@ -414,23 +409,18 @@ function Sobre() {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 grid gap-12 md:gap-16 lg:gap-20 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] items-center">
         <div className="ks-reveal">
           <div
-            className="relative aspect-[4/5] w-full rounded-3xl border flex items-center justify-center overflow-hidden"
+            className="relative aspect-[4/5] w-full rounded-3xl border overflow-hidden"
             style={{
               backgroundColor: "var(--cream)",
               borderColor: "rgba(201,174,93,0.4)",
             }}
           >
-            <span
-              className="font-display select-none"
-              style={{
-                fontSize: "clamp(120px, 18vw, 200px)",
-                color: "var(--olive)",
-                letterSpacing: "-0.04em",
-                fontWeight: 300,
-              }}
-            >
-              KS
-            </span>
+            <img
+              src={keilyPhoto.url}
+              alt="Keily Silva, Psicóloga e Psicanalista"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+            />
             <span
               aria-hidden
               className="absolute bottom-6 left-6 right-6 h-px"
