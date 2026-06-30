@@ -9,9 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import keilyPhoto from "@/assets/keily.jpg.asset.json";
 
-const WHATSAPP_URL =
-  "https://api.whatsapp.com/send?phone=5511942713592&text=" +
-  encodeURIComponent("Olá, Keily! Gostaria de agendar uma consulta.");
+const WHATSAPP_URL = "https://wa.me/5511920404580?text=Ol%C3%A1%2C%20Keily!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
