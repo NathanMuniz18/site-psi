@@ -87,6 +87,7 @@ function Page() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <InstagramFloat />
     </div>
   );
 }
