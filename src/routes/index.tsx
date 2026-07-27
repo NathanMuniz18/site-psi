@@ -625,3 +625,22 @@ function WhatsAppFloat() {
     </a>
   );
 }
+
+/* ---------- Instagram Float ---------- */
+
+const INSTAGRAM_URL = "https://www.instagram.com/psi.keilysilva/";
+
+function InstagramFloat() {
+  return (
+    <a
+      href={INSTAGRAM_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ver perfil no Instagram"
+      className="fixed bottom-24 right-6 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--gold)] focus-visible:ring-offset-2"
+      style={{ backgroundColor: "var(--brown)", color: "var(--cream)" }}
+    >
+      <Instagram className="w-7 h-7" />
+    </a>
+  );
+}
