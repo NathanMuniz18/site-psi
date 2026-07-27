@@ -588,7 +588,7 @@ function Footer() {
         </div>
         <div className="flex flex-col md:items-end gap-4">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/psi.keilysilva/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
