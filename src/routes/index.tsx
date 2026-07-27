@@ -87,6 +87,7 @@ function Page() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <InstagramFloat />
     </div>
   );
 }
@@ -588,7 +589,7 @@ function Footer() {
         </div>
         <div className="flex flex-col md:items-end gap-4">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/psi.keilysilva/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -621,6 +622,25 @@ function WhatsAppFloat() {
       <svg viewBox="0 0 32 32" className="w-7 h-7" fill="currentColor" aria-hidden="true">
         <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.715.315-.444.43-1.32 1.247-1.32 2.523 0 1.262.93 2.484 1.06 2.662 1.16 1.56 2.46 2.95 4.14 3.703 2.43 1.09 2.91.825 3.44.776.53-.054 1.71-.685 1.96-1.39.245-.704.245-1.32.175-1.46-.07-.137-.255-.21-.54-.345l-1.69-.79zM16 30.005c-7.732 0-14-6.273-14-14 0-7.732 6.268-14 14-14s14 6.268 14 14c0 7.727-6.268 14-14 14zm0-25.602C9.654 4.403 4.4 9.652 4.4 16c0 2.516.81 4.846 2.183 6.737L5.34 27l4.4-1.156A11.524 11.524 0 0 0 16 27.6c6.346 0 11.6-5.25 11.6-11.6 0-6.348-5.254-11.597-11.6-11.597z" />
       </svg>
+    </a>
+  );
+}
+
+/* ---------- Instagram Float ---------- */
+
+const INSTAGRAM_URL = "https://www.instagram.com/psi.keilysilva/";
+
+function InstagramFloat() {
+  return (
+    <a
+      href={INSTAGRAM_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ver perfil no Instagram"
+      className="fixed bottom-24 right-6 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-transform duration-300 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--gold)] focus-visible:ring-offset-2"
+      style={{ backgroundColor: "var(--brown)", color: "var(--cream)" }}
+    >
+      <Instagram className="w-7 h-7" />
     </a>
   );
 }
