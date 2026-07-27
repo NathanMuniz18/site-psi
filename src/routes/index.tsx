@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Atendimento psicanalítico online especializado em mulheres e relacionamentos. Keily Silva, Psicóloga CRP 06/215333, formada pela UNJ e especialista em Psicanálise pela PUCRS.",
+          "Atendimento psicanalítico online especializado em mulheres e relacionamentos. Keily Silva, Psicóloga CRP 06/215233, formada pela UNJ e especialista em Psicanálise pela PUCRS.",
       },
       { property: "og:title", content: "Keily Silva | Psicóloga e Psicanalista Online" },
       {
@@ -458,7 +458,7 @@ function Sobre() {
                 borderColor: "rgba(201,174,93,0.35)",
               }}
             >
-              CRP 06/215333
+              CRP 06/215233
             </span>
           </div>
         </div>
@@ -580,7 +580,7 @@ function Footer() {
         <div>
           <div className="font-display text-2xl text-[color:var(--brown)]">Keily Silva</div>
           <p className="mt-2 text-[14px] text-[color:var(--brown)]/70">
-            Psicóloga e Psicanalista · CRP 06/215333
+            Psicóloga e Psicanalista · CRP 06/215233
           </p>
           <p className="text-[14px] text-[color:var(--brown)]/70">
             Atendimento 100% online para mulheres de todo o Brasil.
